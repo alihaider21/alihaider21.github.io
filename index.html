@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ali Haider — AI Engineer</title>
+  <meta name="description" content="Ali Haider is an AI Engineer in Lahore, Pakistan, building production computer vision, OCR, RAG and LLM systems, from NVIDIA Jetson edge devices to AWS.">
+  <meta name="author" content="Ali Haider">
+  <meta name="theme-color" content="#f5f4ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0c0e0d" media="(prefers-color-scheme: dark)">
+
+  <!-- Social previews (og:image must be a full URL for LinkedIn/WhatsApp to show it) -->
+  <link rel="canonical" href="https://alihaider21.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alihaider21.github.io/">
+  <meta property="og:title" content="Ali Haider — AI Engineer">
+  <meta property="og:description" content="Production computer vision, generative AI and agentic systems, from edge devices to the cloud.">
+  <meta property="og:image" content="https://alihaider21.github.io/assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/ali-haider.webp" type="image/webp">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    // Apply the saved theme before first paint to avoid a flash.
+    (function () {
+      var root = document.documentElement;
+      root.classList.add('js');
+      try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') root.dataset.theme = t; } catch (e) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ali Haider",
+    "jobTitle": "AI Engineer",
+    "email": "mailto:alidevolper@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Lahore", "addressCountry": "PK" },
+    "worksFor": { "@type": "Organization", "name": "Odyx AI" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Virtual University of Pakistan" },
+    "sameAs": ["https://github.com/alihaider21", "https://www.linkedin.com/in/ali-haider-ai/"],
+    "knowsAbout": ["Computer Vision", "Generative AI", "Large Language Models", "Retrieval-Augmented Generation", "Edge AI", "MLOps"]
+  }
+  </script>
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .31.2.69.82.57A12 12 0 0 0 12 .3"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zm1.78 13.02H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="14" height="14" rx="2"/><path d="M4 16a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-scan" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/><circle cx="12" cy="12" r="1"/><path d="M18.94 12.33a1 1 0 0 0 0-.66 7.5 7.5 0 0 0-13.88 0 1 1 0 0 0 0 .66 7.5 7.5 0 0 0 13.88 0"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M9.94 15.5A2 2 0 0 0 8.5 14.06l-6.13-1.58a.5.5 0 0 1 0-.96L8.5 9.94A2 2 0 0 0 9.94 8.5l1.58-6.14a.5.5 0 0 1 .96 0l1.58 6.14a2 2 0 0 0 1.44 1.44l6.13 1.58a.5.5 0 0 1 0 .96l-6.13 1.58a2 2 0 0 0-1.44 1.44l-1.58 6.13a.5.5 0 0 1-.96 0z"/><path d="M20 3v4M22 5h-4"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M21.42 10.92a1 1 0 0 0-.02-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.83l8.57 3.91a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Ali Haider — back to top">
+        <img class="brand-mark" src="favicon.svg" width="32" height="32" alt="">
+        <span class="brand-name">Ali Haider</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Toggle colour theme">
+          <svg class="icon i-sun"><use href="#i-sun"/></svg>
+          <svg class="icon i-moon"><use href="#i-moon"/></svg>
+        </button>
+        <a class="btn btn-sm btn-primary nav-resume" href="https://drive.google.com/file/d/10DHb1CscIpyzsxv9k8oUMbcNLwpF-wdC/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+        <button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+          <svg class="icon i-menu"><use href="#i-menu"/></svg>
+          <svg class="icon i-x"><use href="#i-x"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Lahore, Pakistan</p>
+          <h1 class="hero-title">
+            <span class="hero-hello">Hi, I’m <strong>Ali Haider</strong> — AI Engineer.</span>
+            <span class="hero-statement">I build AI systems that <em>run in production</em>, not just in notebooks.</span>
+          </h1>
+          <p class="hero-lede">
+            2+ years shipping computer vision, OCR, RAG and LLM agents — on NVIDIA Jetson at the edge and AWS in the cloud.
+            Currently a Machine Learning Engineer at <strong>Odyx&nbsp;AI</strong>.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">View my work <svg class="icon"><use href="#i-arrow-right"/></svg></a>
+            <a class="btn btn-ghost" href="https://drive.google.com/file/d/10DHb1CscIpyzsxv9k8oUMbcNLwpF-wdC/view?usp=sharing" target="_blank" rel="noopener"><svg class="icon"><use href="#i-download"/></svg> Download resume</a>
+          </div>
+          <ul class="hero-social" aria-label="Profiles">
+            <li><a href="https://github.com/alihaider21" target="_blank" rel="noopener"><svg class="icon"><use href="#i-github"/></svg> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/ali-haider-ai/" target="_blank" rel="noopener"><svg class="icon"><use href="#i-linkedin"/></svg> LinkedIn</a></li>
+            <li><a href="mailto:alidevolper@gmail.com"><svg class="icon"><use href="#i-mail"/></svg> Email</a></li>
+          </ul>
+        </div>
+
+        <figure class="hero-photo">
+          <div class="photo-frame">
+            <picture>
+              <source srcset="assets/img/ali-haider.webp" type="image/webp">
+              <img src="assets/img/ali-haider.jpg" width="760" height="950" alt="Portrait of Ali Haider" fetchpriority="high">
+            </picture>
+            <div class="viewfinder" aria-hidden="true"></div>
+            <div class="bbox" aria-hidden="true"><span class="bbox-label">ai_engineer <b>0.98</b></span></div>
+          </div>
+          <figcaption class="status"><span class="pulse" aria-hidden="true"></span>ML Engineer @ Odyx AI</figcaption>
+        </figure>
+      </div>
+
+      <div class="container">
+        <ul class="stats" aria-label="Highlights">
+          <li class="stat reveal">
+            <p class="stat-value">2+<small>years</small></p>
+            <p class="stat-label">building and deploying production AI systems</p>
+          </li>
+          <li class="stat reveal">
+            <p class="stat-value">&lt;2<small>min</small></p>
+            <p class="stat-label">vehicle re-imaging turnaround, down from 1–2 days</p>
+          </li>
+          <li class="stat reveal">
+            <p class="stat-value">92%</p>
+            <p class="stat-label">field-level OCR accuracy on 100+ documents a day</p>
+          </li>
+          <li class="stat reveal">
+            <p class="stat-value">18+<small>tools</small></p>
+            <p class="stat-label">LLM-callable tools in an automotive MCP server</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker"><span>01</span>About</p>
+          <h2 class="section-title">The full ML lifecycle, <em>from model to endpoint.</em></h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>I’m an AI Engineer with 2+ years of experience building and deploying production AI systems across computer vision, NLP, generative AI and agentic applications.</p>
+            <p>My work spans real-time inference, OCR, retrieval-augmented generation and LLM applications, edge AI on NVIDIA Jetson, and cloud ML services on AWS. I’m comfortable across the whole path: developing and optimising a model, then deploying it reliably in production.</p>
+          </div>
+
+          <ul class="focus-grid">
+            <li class="focus-card reveal">
+              <span class="focus-icon"><svg class="icon"><use href="#i-scan"/></svg></span>
+              <h3>Computer Vision</h3>
+              <p>Detection, segmentation, OCR and monocular depth with YOLO, SAM, Detectron2, MiDaS and PaddleOCR.</p>
+            </li>
+            <li class="focus-card reveal">
+              <span class="focus-icon"><svg class="icon"><use href="#i-sparkles"/></svg></span>
+              <h3>Generative AI &amp; LLMs</h3>
+              <p>RAG pipelines, MCP tool servers, LangChain and LangGraph agents, and image generation with Gemini.</p>
+            </li>
+            <li class="focus-card reveal">
+              <span class="focus-icon"><svg class="icon"><use href="#i-cpu"/></svg></span>
+              <h3>Edge AI</h3>
+              <p>Real-time inference on NVIDIA Jetson Orin, optimised with TensorRT, ONNX and quantisation.</p>
+            </li>
+            <li class="focus-card reveal">
+              <span class="focus-icon"><svg class="icon"><use href="#i-layers"/></svg></span>
+              <h3>Production ML</h3>
+              <p>Async FastAPI services, Docker and AWS (S3, EC2, SageMaker), from job tracking to signed URLs.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker"><span>02</span>Experience</p>
+          <h2 class="section-title">Where I’ve been <em>shipping.</em></h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="role reveal">
+            <div class="role-meta">
+              <p class="role-dates">Dec 2025 — Present <span class="badge">Current</span></p>
+              <h3 class="role-company">Odyx AI</h3>
+              <p class="role-title">Machine Learning Engineer</p>
+            </div>
+            <div class="role-body">
+              <ul class="points">
+                <li><strong>Automotive generative AI.</strong> Engineered an end-to-end vehicle re-imaging pipeline on the Gemini image-generation API, cutting manual photo editing from 1–2 days to under 2 minutes. Integrated Segment Anything (SAM) to preserve vehicle logos and branding during generation.</li>
+                <li><strong>Production inference infrastructure.</strong> Built and deployed a scalable FastAPI service with Docker and AWS S3, supporting asynchronous inference jobs, unique job tracking and secure signed URLs for generated outputs.</li>
+                <li><strong>Computer vision for automotive diagnostics.</strong> Developed a monocular tyre-tread depth estimation system using MiDaS on single RGB images, enabling contactless wear estimation without specialised hardware.</li>
+              </ul>
+              <ul class="tags" aria-label="Technologies">
+                <li>Gemini API</li><li>SAM</li><li>MiDaS</li><li>FastAPI</li><li>Docker</li><li>AWS S3</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="role reveal">
+            <div class="role-meta">
+              <p class="role-dates">Jun 2024 — Nov 2025</p>
+              <h3 class="role-company">ProjectZ Corporation</h3>
+              <p class="role-title">Associate Machine Learning Engineer</p>
+            </div>
+            <div class="role-body">
+              <ul class="points">
+                <li><strong>Intelligent document processing.</strong> Developed and deployed production OCR pipelines with YOLOv8 and PaddleOCR for multi-template documents, reaching 92% field-level accuracy across 100+ documents processed daily and automating structured JSON extraction.</li>
+                <li><strong>LLM &amp; RAG applications.</strong> Built AI-powered applications for document summarisation and customer support using LLMs and retrieval-augmented generation, with production APIs that bring AI into client workflows.</li>
+                <li><strong>Production ML integration.</strong> Integrated ML inference pipelines with backend services and client workflows, delivering automated document processing and structured data extraction in production.</li>
+              </ul>
+              <ul class="tags" aria-label="Technologies">
+                <li>YOLOv8</li><li>PaddleOCR</li><li>LLMs</li><li>RAG</li><li>Python</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker"><span>03</span>Projects</p>
+          <h2 class="section-title">Selected <em>projects.</em></h2>
+          <p class="section-sub">Systems I designed end to end, each shown with its data flow.</p>
+        </header>
+
+        <div class="projects">
+          <!-- Project 1 -->
+          <article class="project reveal">
+            <div class="project-info">
+              <p class="project-num"><span>01</span> LLM agents · MCP</p>
+              <h3 class="project-title">Car Analysis MCP Server</h3>
+              <p class="project-summary">An automotive intelligence backend that lets LLMs analyse vehicles through 18+ callable tools.</p>
+              <ul class="points">
+                <li>Exposes tools for inventory search, semantic PDF retrieval, trade-in valuation, appraisal summaries, VIN decoding and damage detection.</li>
+                <li>A validated natural-language-to-SQL pipeline turns user questions into safe SQL queries over structured vehicle data.</li>
+                <li>Layered microservice architecture: Ollama LLMs, Milvus vector search, PostgreSQL, AWS S3, a gRPC image-processing service, and automated Excel export with email delivery.</li>
+              </ul>
+              <ul class="tags" aria-label="Technologies">
+                <li>Python</li><li>FastMCP</li><li>Ollama</li><li>Milvus</li><li>PostgreSQL</li><li>gRPC</li><li>AWS</li>
+              </ul>
+            </div>
+            <div class="pipeline-panel">
+              <p class="pipeline-caption"><span>system flow</span><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></p>
+              <ol class="pipeline" aria-label="Car Analysis MCP Server data flow">
+                <li class="node"><span class="node-k">in</span>Natural-language question</li>
+                <li class="node node-accent"><span class="node-k">llm</span>Ollama model</li>
+                <li class="node"><span class="node-k">mcp</span>FastMCP server · 18+ tools</li>
+                <li class="node node-fan"><span class="node-k">tools</span>
+                  <span class="fan"><span>NL → SQL · PostgreSQL</span><span>Semantic search · Milvus</span><span>Damage detection · gRPC</span><span>VIN decode</span></span>
+                </li>
+                <li class="node"><span class="node-k">out</span>Answer · Excel report · email</li>
+              </ol>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project reveal">
+            <div class="project-info">
+              <p class="project-num"><span>02</span> Edge AI · Computer vision</p>
+              <h3 class="project-title">Livestock Calving Detection System</h3>
+              <p class="project-summary">Real-time edge vision that watches livestock video streams and alerts farm operators when calving begins.</p>
+              <ul class="points">
+                <li>Multi-class YOLOv8 behaviour model detecting pre- and post-calving events: posture (sitting angle ≥90° sustained &gt;10s), tail raise (&gt;15s), amniotic sac appearance and calf emergence.</li>
+                <li>Full inference pipeline deployed on NVIDIA Jetson Orin, with frame deduplication and stream-level optimisations to sustain real-time throughput at the edge.</li>
+                <li>Targeted data augmentation for robustness under variable farm lighting and camera angles; automated real-time alerts enable timely veterinary intervention.</li>
+              </ul>
+              <ul class="tags" aria-label="Technologies">
+                <li>YOLOv8</li><li>Jetson Orin</li><li>TensorRT</li><li>OpenCV</li>
+              </ul>
+            </div>
+            <div class="pipeline-panel">
+              <p class="pipeline-caption"><span>system flow</span><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></p>
+              <ol class="pipeline" aria-label="Livestock Calving Detection data flow">
+                <li class="node"><span class="node-k">in</span>Live farm camera streams</li>
+                <li class="node"><span class="node-k">pre</span>Frame deduplication</li>
+                <li class="node node-accent"><span class="node-k">edge</span>YOLOv8 · TensorRT on Jetson Orin</li>
+                <li class="node node-fan"><span class="node-k">rules</span>
+                  <span class="fan"><span>Sitting ≥90° for &gt;10s</span><span>Tail raised &gt;15s</span><span>Amniotic sac</span><span>Calf emergence</span></span>
+                </li>
+                <li class="node"><span class="node-k">out</span>Real-time alert to farm operators</li>
+              </ol>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project reveal">
+            <div class="project-info">
+              <p class="project-num"><span>03</span> Segmentation · Cloud + edge</p>
+              <h3 class="project-title">iCast Interactive Projection Mapping</h3>
+              <p class="project-summary">The computer vision backend that turns a phone photo into precise masks projected onto real-world 3D surfaces.</p>
+              <ul class="points">
+                <li>Integrated Meta’s Segment Anything Model (SAM) behind a FastAPI service to generate precise object masks from mobile-captured images.</li>
+                <li>Designed the API contract and mask-delivery workflow for a seamless mobile-to-projector pipeline.</li>
+                <li>Deployed scalable services on AWS EC2 for mask generation and pattern overlays, integrated with NVIDIA Jetson devices driving physical projectors, with real-time alignment, scaling and positioning.</li>
+              </ul>
+              <ul class="tags" aria-label="Technologies">
+                <li>SAM</li><li>FastAPI</li><li>AWS EC2</li><li>NVIDIA Jetson</li>
+              </ul>
+            </div>
+            <div class="pipeline-panel">
+              <p class="pipeline-caption"><span>system flow</span><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></p>
+              <ol class="pipeline" aria-label="iCast projection mapping data flow">
+                <li class="node"><span class="node-k">in</span>Photo from mobile app</li>
+                <li class="node"><span class="node-k">api</span>FastAPI on AWS EC2</li>
+                <li class="node node-accent"><span class="node-k">model</span>SAM object masks</li>
+                <li class="node node-fan"><span class="node-k">fit</span>
+                  <span class="fan"><span>Align</span><span>Scale</span><span>Position</span><span>Pattern overlay</span></span>
+                </li>
+                <li class="node"><span class="node-k">out</span>Jetson → projector onto 3D surface</li>
+              </ol>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker"><span>04</span>Skills</p>
+          <h2 class="section-title">The <em>toolbox.</em></h2>
+        </header>
+
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3>Computer Vision &amp; ML <span>09</span></h3>
+            <ul class="chips">
+              <li>PyTorch</li><li>OpenCV</li><li>YOLO</li><li>Detectron2</li><li>SAM</li><li>MiDaS</li><li>PaddleOCR</li><li>Hugging Face Transformers</li><li>scikit-learn</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Generative AI &amp; LLMs <span>08</span></h3>
+            <ul class="chips">
+              <li>RAG</li><li>MCP</li><li>Vector databases</li><li>LangChain</li><li>LangGraph</li><li>LLM APIs</li><li>Prompt engineering</li><li>LLM fine-tuning</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Backend &amp; MLOps <span>07</span></h3>
+            <ul class="chips">
+              <li>Python</li><li>FastAPI</li><li>Django</li><li>Docker</li><li>PostgreSQL</li><li>Git</li><li>CI/CD</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Cloud &amp; Edge AI <span>06</span></h3>
+            <ul class="chips">
+              <li>AWS (S3, EC2, SageMaker)</li><li>NVIDIA Jetson Orin</li><li>TensorRT</li><li>ONNX</li><li>Model quantisation</li><li>Inference optimisation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker"><span>05</span>Education</p>
+          <h2 class="section-title">Education &amp; <em>certifications.</em></h2>
+        </header>
+
+        <div class="cred-grid">
+          <article class="cred reveal">
+            <p class="cred-type"><svg class="icon"><use href="#i-cap"/></svg> Degree</p>
+            <h3>BS Computer Science</h3>
+            <p>Virtual University of Pakistan</p>
+            <p class="cred-date">Fall 2021 — 2026</p>
+          </article>
+          <article class="cred reveal">
+            <p class="cred-type"><svg class="icon"><use href="#i-award"/></svg> Certification</p>
+            <h3>Microsoft Certified: Azure AI Fundamentals</h3>
+            <p>Microsoft</p>
+            <a class="cred-link" href="https://drive.google.com/file/d/1oRyeNM0Uiy5yTXONDzXL1voBbHAKOyWp/view?usp=sharing" target="_blank" rel="noopener">View certificate <svg class="icon"><use href="#i-arrow-up-right"/></svg></a>
+          </article>
+          <article class="cred reveal">
+            <p class="cred-type"><svg class="icon"><use href="#i-award"/></svg> Certification</p>
+            <h3>Machine Learning &amp; Deep Learning</h3>
+            <p>NAVTTC</p>
+            <a class="cred-link" href="https://drive.google.com/file/d/1hh8k2XUO2yOLoJEOIIGF-Mi_9r4gMixx/view?usp=sharing" target="_blank" rel="noopener">View certificate <svg class="icon"><use href="#i-arrow-up-right"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <p class="section-kicker"><span>06</span>Contact</p>
+          <h2 class="contact-title">Have a model that needs to ship? <em>Let’s&nbsp;talk.</em></h2>
+          <p class="contact-lede">Whether it’s a role, a collaboration or a question about computer vision and LLM systems, I’d be glad to hear from you. Based in Lahore and open to relocation.</p>
+
+          <div class="email-row">
+            <a class="email-link" href="mailto:alidevolper@gmail.com">alidevolper@gmail.com</a>
+            <button class="btn btn-sm copy-btn" type="button" data-copy="alidevolper@gmail.com">
+              <svg class="icon i-copy"><use href="#i-copy"/></svg>
+              <svg class="icon i-check"><use href="#i-check"/></svg>
+              <span aria-live="polite">Copy</span>
+            </button>
+          </div>
+
+          <ul class="contact-links">
+            <li><a href="https://www.linkedin.com/in/ali-haider-ai/" target="_blank" rel="noopener"><svg class="icon"><use href="#i-linkedin"/></svg> LinkedIn</a></li>
+            <li><a href="https://github.com/alihaider21" target="_blank" rel="noopener"><svg class="icon"><use href="#i-github"/></svg> GitHub</a></li>
+            <li><a href="tel:+923237508734"><svg class="icon"><use href="#i-phone"/></svg> +92 323 7508734</a></li>
+            <li><a href="https://drive.google.com/file/d/10DHb1CscIpyzsxv9k8oUMbcNLwpF-wdC/view?usp=sharing" target="_blank" rel="noopener"><svg class="icon"><use href="#i-download"/></svg> Resume (PDF)</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Ali Haider · Lahore, Pakistan</p>
+      <a class="back-top" href="#top">Back to top <svg class="icon"><use href="#i-arrow-up"/></svg></a>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
