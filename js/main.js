@@ -6,7 +6,7 @@
   /* ---------- Theme toggle ---------- */
   const themeBtn = $('.theme-toggle');
   const darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
-  const THEME_BG = { light: '#f5f4ee', dark: '#0c0e0d' };
+  const THEME_BG = { light: '#f3eee4', dark: '#1a1714' };
 
   const currentTheme = () => root.dataset.theme || (darkQuery.matches ? 'dark' : 'light');
 

@@ -42,5 +42,5 @@ The full URLs in the `<head>` of `index.html` (`canonical`, `og:url`, `og:image`
 
 - **Text** (experience, projects, skills): edit `index.html`. Each section is marked with a `<!-- ==== SECTION ==== -->` comment.
 - **Resume**: the three resume buttons link to the PDF on Google Drive. To update it, open the file in Drive and use **Manage versions → Upload new version**, which keeps the same link. If you share a new file instead, replace the Drive URL in `index.html` (it appears 3 times).
-- **Photo**: replace both `assets/img/ali-haider.webp` and `.jpg`, using a 4:5 portrait. The green face box sits over the face in the current photo, so adjust `.bbox` (`left`, `top`, `width`, `height`) in `css/style.css` for a new one.
-- **Colours**: change the tokens at the top of `css/style.css`. `--accent` and `--box` are the green.
+- **Photo**: replace both `assets/img/ali-haider.webp` and `.jpg`, using a 4:5 portrait. The orange face box sits over the face in the current photo, so adjust `.bbox` (`left`, `top`, `width`, `height`) in `css/style.css` for a new one.
+- **Colours**: change the tokens at the top of `css/style.css`. `--accent` is the rust used for lines and shadows, `--hl-bg` is the rust behind cream text (highlights, badges and icons), and `--box` is the orange of the face-detection box.

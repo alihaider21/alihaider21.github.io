@@ -6,8 +6,8 @@
   <title>Ali Haider — AI Engineer</title>
   <meta name="description" content="Ali Haider is an AI Engineer in Lahore, Pakistan, building production computer vision, OCR, RAG and LLM systems, from NVIDIA Jetson edge devices to AWS.">
   <meta name="author" content="Ali Haider">
-  <meta name="theme-color" content="#f5f4ee" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0c0e0d" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f3eee4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1a1714" media="(prefers-color-scheme: dark)">
 
   <!-- Social previews (og:image must be a full URL for LinkedIn/WhatsApp to show it) -->
   <link rel="canonical" href="https://alihaider21.github.io/">
@@ -23,7 +23,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="assets/img/ali-haider.webp" type="image/webp">
   <link rel="stylesheet" href="css/style.css">
 
@@ -140,10 +140,16 @@
               <source srcset="assets/img/ali-haider.webp" type="image/webp">
               <img src="assets/img/ali-haider.jpg" width="760" height="950" alt="Portrait of Ali Haider" fetchpriority="high">
             </picture>
-            <div class="viewfinder" aria-hidden="true"></div>
             <div class="bbox" aria-hidden="true"><span class="bbox-label">ai_engineer <b>0.98</b></span></div>
           </div>
-          <figcaption class="status"><span class="pulse" aria-hidden="true"></span>ML Engineer @ Odyx AI</figcaption>
+          <svg class="sticker" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+            <defs><path id="sticker-ring" d="M60 60m-45 0a45 45 0 1 1 90 0a45 45 0 1 1-90 0"/></defs>
+            <circle class="sticker-bg" cx="60" cy="60" r="59"/>
+            <g class="sticker-spin">
+              <text><textPath href="#sticker-ring" textLength="280" lengthAdjust="spacing">AI ENGINEER · COMPUTER VISION · LLMS ·</textPath></text>
+            </g>
+            <path class="sticker-star" d="M60 45v30M47 52.5l26 15M47 67.5l26-15"/>
+          </svg>
         </figure>
       </div>
 
@@ -283,7 +289,7 @@
               </ul>
             </div>
             <div class="pipeline-panel">
-              <p class="pipeline-caption"><span>system flow</span><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></p>
+              <p class="pipeline-caption"><span>system flow</span></p>
               <ol class="pipeline" aria-label="Car Analysis MCP Server data flow">
                 <li class="node"><span class="node-k">in</span>Natural-language question</li>
                 <li class="node node-accent"><span class="node-k">llm</span>Ollama model</li>
@@ -312,7 +318,7 @@
               </ul>
             </div>
             <div class="pipeline-panel">
-              <p class="pipeline-caption"><span>system flow</span><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></p>
+              <p class="pipeline-caption"><span>system flow</span></p>
               <ol class="pipeline" aria-label="Livestock Calving Detection data flow">
                 <li class="node"><span class="node-k">in</span>Live farm camera streams</li>
                 <li class="node"><span class="node-k">pre</span>Frame deduplication</li>
@@ -341,7 +347,7 @@
               </ul>
             </div>
             <div class="pipeline-panel">
-              <p class="pipeline-caption"><span>system flow</span><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></p>
+              <p class="pipeline-caption"><span>system flow</span></p>
               <ol class="pipeline" aria-label="iCast projection mapping data flow">
                 <li class="node"><span class="node-k">in</span>Photo from mobile app</li>
                 <li class="node"><span class="node-k">api</span>FastAPI on AWS EC2</li>

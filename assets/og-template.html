@@ -4,44 +4,36 @@
 <head>
 <meta charset="utf-8">
 <title>OG image template</title>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&family=Geist+Mono:wght@500&family=Instrument+Serif:ital@0;1&display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@500;700&display=block" rel="stylesheet">
 <style>
   html, body { margin: 0; }
   body {
     width: 1200px; height: 630px; overflow: hidden; position: relative;
-    background: #0c0e0d; color: #eceee8; font-family: "Geist", sans-serif;
+    background: #f3eee4; color: #1b1a17; font-family: "Figtree", sans-serif;
   }
-  body::before {
-    content: ""; position: absolute; inset: 0;
-    background:
-      radial-gradient(circle at 0% 100%, rgba(190,242,100,.14), transparent 45%),
-      linear-gradient(rgba(236,238,232,.05) 1px, transparent 1px) 0 0 / 48px 48px,
-      linear-gradient(90deg, rgba(236,238,232,.05) 1px, transparent 1px) 0 0 / 48px 48px;
-  }
-  .copy { position: absolute; left: 80px; top: 88px; width: 640px; }
-  .kicker { font: 500 18px/1 "Geist Mono", monospace; letter-spacing: .1em; text-transform: uppercase; color: #bef264; display: flex; align-items: center; gap: 12px; }
-  .kicker::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: #bef264; box-shadow: 0 0 0 5px rgba(190,242,100,.15); }
-  h1 { margin: 36px 0 0; font: 400 116px/0.95 "Instrument Serif", serif; letter-spacing: -.02em; }
-  h1 em { color: #bef264; }
-  p { margin: 30px 0 0; font-size: 28px; line-height: 1.4; color: #aab1ac; }
-  .tags { position: absolute; left: 80px; bottom: 72px; display: flex; gap: 10px; }
-  .tags span { font: 500 17px/1 "Geist Mono", monospace; padding: 10px 14px; border: 1px solid #353c37; border-radius: 999px; color: #d6dad3; }
-  .photo { position: absolute; right: 80px; top: 70px; width: 392px; height: 490px; border-radius: 28px; overflow: hidden; box-shadow: 0 30px 60px -20px rgba(0,0,0,.8); }
+  .copy { position: absolute; left: 80px; top: 92px; width: 620px; }
+  .kicker { display: flex; align-items: center; gap: 14px; font-weight: 700; font-size: 19px; letter-spacing: .14em; text-transform: uppercase; color: #4a453d; }
+  .kicker::before { content: ""; width: 14px; height: 14px; border-radius: 3px; background: #c2410c; }
+  h1 { margin: 34px 0 0; font: 700 124px/0.98 "Bricolage Grotesque", sans-serif; letter-spacing: -.03em; }
+  h1 em { font-style: normal; color: #fbf5ea; background: #b53d0c; padding: 0 .08em; border-radius: .06em; }
+  p { margin: 34px 0 0; font-size: 29px; line-height: 1.35; font-weight: 500; color: #4a453d; }
+  .rule { position: absolute; left: 80px; right: 80px; bottom: 64px; border-top: 3px solid #1b1a17; }
+  .photo { position: absolute; right: 94px; top: 64px; width: 360px; height: 450px; border: 3px solid #1b1a17; border-radius: 24px; overflow: hidden; box-shadow: 16px 16px 0 #c2410c; }
   .photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .bbox { position: absolute; left: 33.5%; top: 7.5%; width: 32%; height: 31%; border: 3px solid #bef264; border-radius: 3px; }
-  .bbox span { position: absolute; left: -3px; bottom: 100%; background: #bef264; color: #0c0e0d; font: 500 14px/1 "Geist Mono", monospace; padding: 6px 8px 5px; border-radius: 3px 3px 0 0; white-space: nowrap; }
+  .bbox { position: absolute; left: 33.5%; top: 7.5%; width: 32%; height: 31%; border: 3px solid #ff701f; border-radius: 3px; }
+  .bbox span { position: absolute; left: -3px; bottom: 100%; background: #ff701f; color: #1b1a17; font: 700 14px/1 ui-monospace, Menlo, monospace; padding: 6px 8px 5px; border-radius: 3px 3px 0 0; white-space: nowrap; }
 </style>
 </head>
 <body>
   <div class="copy">
-    <div class="kicker">AI Engineer · Lahore, PK</div>
-    <h1>Ali <em>Haider</em></h1>
-    <p>Production computer vision, generative AI and agentic systems, from edge devices to the cloud.</p>
+    <div class="kicker">Lahore, Pakistan</div>
+    <h1>Ali Haider, <em>AI&nbsp;Engineer</em></h1>
+    <p>Production computer vision, generative AI and agentic systems.</p>
   </div>
-  <div class="tags"><span>YOLO</span><span>SAM</span><span>RAG</span><span>MCP</span><span>Jetson</span><span>AWS</span></div>
   <div class="photo">
     <img src="img/ali-haider.jpg" alt="">
     <div class="bbox"><span>ai_engineer 0.98</span></div>
   </div>
+  <div class="rule"></div>
 </body>
 </html>
